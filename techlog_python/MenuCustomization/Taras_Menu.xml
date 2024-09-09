@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<CustomMenus>
+
+	
+
+	<CustomMenu id="Upload2Techlog" name="Upload2Techlog"> <!-- Первая и последняя буква - латинские -->
+		<PythonEditor id="rename_import" silentMode="1"  silentMode="1" pixmap="User\icons\32x32\well.png" text="Переименование скв-н" path="User\ДМ_Переименование_импорт" />
+		<PythonEditor id="inc_import" silentMode="1" pixmap="User\icons\32x32\log.png" text="Инкинометрия загрузка" path="User\ДМ_Инклинометрия_загрузка" />
+		<PythonEditor id="rigis_import" silentMode="1" pixmap="User\icons\32x32\lit.png" text="Мнемоники РИГИС" path="User\ДМ_Мнемоники_юниты_ПТ_импорт" />
+		<PythonEditor id="lqc_import" silentMode="1" pixmap="User\icons\32x32\logs48.png" text="Мнемоники LQC" path="User\ДМ_Мнемоники_LQC" />
+		<PythonEditor id="gbd_logs" silentMode="1" pixmap="User\icons\32x32\petroGroups.png" text="Копирование в GBD_LOGS" path="User\ДМ_Копирование_переменных_GBD_LOGS" />
+		<PythonEditor id="add_zones" silentMode="1" pixmap="User\icons\32x32\zonesEditor.png" text="Парсинг ZONE" path="User\ДМ_Парсинг_Well_Tops" />
+		<PythonEditor id="add_wh" silentMode="1" pixmap="User\icons\32x32\zonesEditor.png" text="Парсинг WH" path="User\ДМ_Парсинг_WH" />
+		<PythonEditor id="add_wi" silentMode="1" pixmap="User\icons\32x32\zonesEditor.png" text="Парсинг WI" path="User\ДМ_Парсинг_wellinfo_ngt" />
+		<PythonEditor id="add_perf" silentMode="1" pixmap="User\icons\32x32\zonesEditor.png" text="Парсинг PERF" path="User\ДМ_Парсинг_PERF_ngt_v2" />
+		<PythonEditor id="add_mer" silentMode="1" pixmap="User\icons\32x32\zonesEditor.png" text="Парсинг МЭР" path="User\ДМ_Парсинг_МЭР_v1" />
+		<PythonEditor id="pads_assing" silentMode="1" pixmap="User\icons\32x32\wellEditor.png" text="Присвоение кустов" path="User\ДМ_Кусты_Присвоение" />
+		<PythonEditor id="metainfo" silentMode="1" pixmap="User\icons\32x32\export.png" text="Присвоение метаданных" path="User\ДМ_Присвоение_метаданных" />		
+	</CustomMenu>
+	
+	<CustomMenu id="OperTools" name="OperTools">
+		<PythonEditor id="layout_stand" silentMode="1" pixmap="User\icons\32x32\layout.png" text="Шаблон базовый" path="User\ДИАГ_Шаблон_базовый" />
+		<PythonEditor id="layout_hrz" silentMode="1" pixmap="User\icons\32x32\breakout.png" text="Шаблон ГС" path="User\ДИАГ_Шаблон_ГС" />
+		<PythonEditor id="logs_hrz" silentMode="1" pixmap="User\icons\32x32\CCE.png" text="Семейства ГК-ЭК в ГС" path="User\ДМ_Семейство_ГК-ЭК_в_ГС" />
+		<PythonEditor id="var_rename" silentMode="1" pixmap="User\icons\32x32\function.png" text="Переименование переменных" path="User\ДМ_Переименование_переменных" />
+		<PythonEditor id="var_copy_sel" silentMode="1" pixmap="User\icons\32x32\compaction.png" text="Копирование каротажей" path="User\ДМ_Копирование_каротажей_GBD_LQC" />
+		<PythonEditor id="depth_corr_lqc" silentMode="1" pixmap="User\icons\32x32\layers.png" text="Корректировка глубины LQC" path="User\ДМ_Корректировка_глубины_LQC" />
+		<PythonEditor id="vnk_marker" silentMode="1" pixmap="User\icons\32x32\fluidContact.png" text="Добавление ВНК" path="User\ОПЕР_Добавление_маркеров_ВНК" />
+		<PythonEditor id="distance_wells" silentMode="1" pixmap="User\icons\32x32\well48.png" text="Ближайшие скважины" path="User\ОПЕР_Расстояние_меж_скважинами_зоны_v2" />
+		<PythonEditor id="wellheads" silentMode="1" pixmap="User\icons\32x32\chart.png" text="Коррд.устьев" path="User\ДМ_Добавление_координат_устьев_wellhead" />
+	</CustomMenu>
+	
+	<CustomMenu id="Support" name="Support">
+		<PythonEditor id="op_report" silentMode="1" pixmap="User\icons\32x32\excel.png" text="Проверка оперативки" path="User\ЭКСЕЛЬ_Проверка_оперативки" />
+	</CustomMenu>
+	
+	<TBarAdvancedOrganizer>
+		<area id="TarasMenu" label="TarasMenu">		
+			<group id="Upload2Techlog" nbBigItems="12" nbRows="2">
+				<action id="rename_import"/>
+				<action id="inc_import"/>
+				<action id="rigis_import"/>
+				<action id="lqc_import"/>
+				<action id="gbd_logs"/>
+				<action id="add_zones"/>
+				<action id="add_wh"/>
+				<action id="add_wi"/>
+				<action id="add_perf"/>
+				<action id="add_mer"/>
+				<action id="pads_assing"/>
+				<action id="metainfo"/>				
+			</group>
+			<group id="OperTools" nbBigItems="9" nbRows="2">
+				<action id="layout_stand"/>
+				<action id="layout_hrz"/>
+				<action id="logs_hrz"/>
+				<action id="var_rename"/>
+				<action id="var_copy_sel"/>
+				<action id="depth_corr_lqc"/>
+				<action id="vnk_marker"/>
+				<action id="distance_wells"/>
+				<action id="wellheads"/>
+			</group>
+			<group id="Support" nbBigItems="1" nbRows="2">
+				<action id="op_report"/>
+			</group>
+		</area>
+	</TBarAdvancedOrganizer>
+</CustomMenus>
+
+

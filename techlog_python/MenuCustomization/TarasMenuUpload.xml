@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<CustomMenus>
+
+	
+
+	<CustomMenu id="Upload2Techlog" name="Upload2Techlog"> <!-- Первая и последняя буква - латинские -->
+		<PythonEditor id="rename_import" silentMode="1"  silentMode="1" pixmap="User\icons\32x32\well.png" text="Переименование скв-н" path="User\ДМ_Переименование_импорт" />
+		<PythonEditor id="inc_import" silentMode="1" pixmap="User\icons\32x32\log.png" text="Инкинометрия загрузка" path="User\ДМ_Инклинометрия_загрузка" />
+		<PythonEditor id="rigis_import" silentMode="1" pixmap="User\icons\32x32\lit.png" text="Мнемоники РИГИС" path="User\ДМ_Мнемоники_юниты_ПТ_импорт" />
+		<PythonEditor id="lqc_import" silentMode="1" pixmap="User\icons\32x32\logs48.png" text="Мнемоники LQC" path="User\ДМ_Мнемоники_LQC" />
+		<PythonEditor id="gbd_logs" silentMode="1" pixmap="User\icons\32x32\petroGroups.png" text="Копирование в GBD_LOGS" path="User\ДМ_Копирование_переменных_GBD_LOGS" />
+		<PythonEditor id="add_zones" silentMode="1" pixmap="User\icons\32x32\zonesEditor.png" text="Парсинг ZONE" path="User\ДМ_Парсинг_Well_Tops" />
+		<PythonEditor id="add_wh" silentMode="1" pixmap="User\icons\32x32\zonesEditor.png" text="Парсинг WH" path="User\ДМ_Парсинг_WH" />
+		<PythonEditor id="add_wi" silentMode="1" pixmap="User\icons\32x32\zonesEditor.png" text="Парсинг WI" path="User\ДМ_Парсинг_wellinfo_ngt" />
+		<PythonEditor id="add_st" silentMode="1" pixmap="User\icons\32x32\zonesEditor.png" text="Парсинг WSt" path="User\ДМ_Парсинг_wellstatus" />
+		<PythonEditor id="add_perf" silentMode="1" pixmap="User\icons\32x32\zonesEditor.png" text="Парсинг PERF" path="User\ДМ_Парсинг_PERF_ngt_v2" />
+		<PythonEditor id="add_mer" silentMode="1" pixmap="User\icons\32x32\zonesEditor.png" text="Парсинг МЭР" path="User\ДМ_Парсинг_МЭР_v1" />
+		<PythonEditor id="pads_assing" silentMode="1" pixmap="User\icons\32x32\wellEditor.png" text="Присвоение кустов" path="User\ДМ_Кусты_Присвоение" />
+		<PythonEditor id="metainfo" silentMode="1" pixmap="User\icons\32x32\export.png" text="Присвоение метаданных" path="User\ДМ_Присвоение_метаданных" />		
+	</CustomMenu>
+	
+	<CustomMenu id="Core" name="Core">
+		<PythonEditor id="core_harmon" silentMode="1" pixmap="User\icons\32x32\mineralo.png" text="Гармонизация керна" path="User\КЕРН_Гармонизация_переменных_семейств" />
+	</CustomMenu>
+	
+	<CustomMenu id="Update" name="Update">
+		<PythonEditor id="update_list" silentMode="1" pixmap="User\icons\32x32\boxPlot.png" text="Новые скважины по Rigis_gm" path="User\ДМ_Проверка_новых_скважин_ригис-гм" />
+	</CustomMenu>
+	
+	<TBarAdvancedOrganizer>
+		<area id="MenuUpload" label="MenuUpload">		
+			<group id="Upload2Techlog" nbBigItems="13" nbRows="2">
+				<action id="rename_import"/>
+				<action id="inc_import"/>
+				<action id="rigis_import"/>
+				<action id="lqc_import"/>
+				<action id="gbd_logs"/>
+				<action id="add_zones"/>
+				<action id="add_wh"/>
+				<action id="add_wi"/>
+				<action id="add_st"/>
+				<action id="add_perf"/>
+				<action id="add_mer"/>
+				<action id="pads_assing"/>
+				<action id="metainfo"/>
+			</group>
+			<group id="Core" nbBigItems="1" nbRows="2">
+				<action id="core_harmon"/>
+			</group>		
+			<group id="Update" nbBigItems="1" nbRows="2">
+				<action id="update_list"/>
+			</group>					
+		</area>
+	</TBarAdvancedOrganizer>
+</CustomMenus>
+
+

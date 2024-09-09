@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<CustomMenus>
+	<CustomMenu id="OperTools" name="OperTools">
+		<PythonEditor id="layout_stand" silentMode="1" pixmap="User\icons\32x32\layout.png" text="Шаблон базовый" path="User\ДИАГ_Шаблон_базовый" />
+		<PythonEditor id="layout_hrz" silentMode="1" pixmap="User\icons\32x32\breakout.png" text="Шаблон ГС" path="User\ДИАГ_Шаблон_ГС" />
+		<PythonEditor id="logs_hrz" silentMode="1" pixmap="User\icons\32x32\CCE.png" text="Семейства ГК-ЭК в ГС" path="User\ДМ_Семейство_ГК-ЭК_в_ГС" />
+		<PythonEditor id="heff_calc" silentMode="1" pixmap="User\icons\32x32\LITHO.png" text="Расчет Нэфф" path="User\ОПЕР_Нэфф_расчет" />
+		<PythonEditor id="var_rename" silentMode="1" pixmap="User\icons\32x32\function.png" text="Переименование переменных" path="User\ДМ_Переименование_переменных" />
+		<PythonEditor id="var_copy_sel" silentMode="1" pixmap="User\icons\32x32\compaction.png" text="Копирование каротажей" path="User\ДМ_Копирование_каротажей_GBD_LQC" />
+		<PythonEditor id="depth_corr_lqc" silentMode="1" pixmap="User\icons\32x32\layers.png" text="Корректировка глубины" path="User\ДМ_Корректировка_глубины_LQC" />
+		<PythonEditor id="corr_satur" silentMode="1" pixmap="User\icons\32x32\saturationWater.png" text="Корректировка satur" path="User\ДМ_Корретировка_satur" />
+		<PythonEditor id="vnk_marker" silentMode="1" pixmap="User\icons\32x32\fluidContact.png" text="Добавление ВНК" path="User\ОПЕР_Добавление_маркеров_ВНК" />
+		<PythonEditor id="distance_wells" silentMode="1" pixmap="User\icons\32x32\well48.png" text="Ближайшие скважины" path="User\ОПЕР_Расстояние_меж_скважинами_зоны_v2" />
+		<PythonEditor id="wellheads" silentMode="1" pixmap="User\icons\32x32\chart.png" text="Коррд.устьев" path="User\ДМ_Добавление_координат_устьев_wellhead" />
+		<PythonEditor id="pads" silentMode="1" pixmap="User\icons\32x32\wellEditor.png" text="Скважины по кусту" path="User\ДМ_Поиск_скважин_по_кусту_v2" />
+		<PythonEditor id="dst_data" silentMode="1" pixmap="User\icons\32x32\quantiSummaries.png" text="Испытания скважин" path="User\ДМ_Испытания_добавить_скважина" />
+	</CustomMenu>
+	
+	<CustomMenu id="Support" name="Support">
+		<PythonEditor id="op_report" silentMode="1" pixmap="User\icons\32x32\excel.png" text="Проверка оперативки" path="User\ЭКСЕЛЬ_Проверка_оперативки" />
+		<PythonEditor id="copy_rep" silentMode="1" pixmap="User\icons\32x32\export.png" text="Копирование оперативки" path="User\ЭКСЕЛЬ_Копирование_контролек" />
+		<PythonEditor id="ds_dataset" silentMode="1" pixmap="User\icons\32x32\dataToolbox.png" text="Выгрузка для ДатаСайнс" path="User\DS_Выгрузка_ДатаСайнс_v2" />
+	</CustomMenu>
+	
+	<TBarAdvancedOrganizer>
+		<area id="MenuOper" label="MenuOper">		
+			<group id="OperTools" nbBigItems="13" nbRows="2">
+				<action id="layout_stand"/>
+				<action id="layout_hrz"/>
+				<action id="logs_hrz"/>
+				<action id="heff_calc"/>
+				<action id="var_rename"/>
+				<action id="var_copy_sel"/>
+				<action id="depth_corr_lqc"/>
+				<action id="corr_satur"/>
+				<action id="vnk_marker"/>
+				<action id="distance_wells"/>
+				<action id="wellheads"/>
+				<action id="pads"/>
+				<action id="dst_data"/>
+			</group>
+			<group id="Support" nbBigItems="3" nbRows="2">
+				<action id="op_report"/>
+				<action id="copy_rep"/>
+				<action id="ds_dataset"/>
+			</group>
+		</area>
+	</TBarAdvancedOrganizer>
+</CustomMenus>
+
+
